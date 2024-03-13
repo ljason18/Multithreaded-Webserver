@@ -88,8 +88,8 @@ final class HttpRequest implements Runnable {
             contentTypeLine = "Content-type: " + contentType(fileName) + CRLF;
         } else {
             statusLine = "HTTP/1.1 404 Not Found";
-            contentTypeLine = "Content-type: " + contentType(fileName) + CRLF;
-            entityBody = "<HTML>" + "<HEAD><TITLE>Not Found</TITLE></HEAD>" + "<BODY>Not Found</BODY></HTML>";
+            contentTypeLine = "Content-type: text/html" + CRLF;
+            entityBody = "<HTML>" + "<HEAD><TITLE>Not Found</TITLE></HEAD>" + "<BODY>404 Not Found</BODY>" + "</HTML>";
         }
         try {
             // Send the status line
