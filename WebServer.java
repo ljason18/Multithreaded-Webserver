@@ -138,6 +138,9 @@ final class HttpRequest implements Runnable {
         if (fileName.endsWith(".htm") || fileName.endsWith(".html")) {
             return "text/html";
         }
+        if (fileName.endsWith(".css")) {
+            return "text/css";
+        }
         if(fileName.endsWith(".gif")) {
             return "image/gif";
         }
