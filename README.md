@@ -20,4 +20,4 @@ Then open your web browser and go to ```localhost:6789/index.html```
 ### URL Explanation 
 It is localhost:6789, as the webserver is listening to Port 6789.
 
-And index.html as that is the test file provided with this repository. The second part, index.html, can be replaced with another file as along as the relative path to that file from where [Webserver.class](Webserver.class) is located is what is replacing index.html (dont include ~).
+And index.html as that is the test file provided with this repository. The second part, index.html, can be replaced with another file as along as the path to that file from where [Webserver.class](Webserver.class) is located is what is replacing index.html.
